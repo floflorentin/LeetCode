@@ -1,5 +1,5 @@
 # LeetCode Solutions in Java
-This repository contains my solutions for LeetCode problems, implemented in Java. The main purpose of this project is to share knowledge and help fellow developers who are preparing for coding interviews or want to improve their problem-solving skills.
+This repository contains my solutions for LeetCode problems, implemented in Java.
 
 ## Table of Contents
 [Introduction](##Introduction)
