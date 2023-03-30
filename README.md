@@ -7,7 +7,7 @@ This repository contains my solutions for LeetCode problems, implemented in Java
 [Structure](##Structure)
 
 ## Introduction
-LeetCode is a platform that provides a collection of coding challenges to help software engineers prepare for technical interviews. The problems cover a wide range of topics, including data structures, algorithms, and databases. This repository aims to help you find Java solutions for these problems to better understand the concepts and improve your problem-solving skills.
+LeetCode is a platform that provides a collection of coding challenges to help software engineers prepare for technical interviews. The problems cover a wide range of topics, including data structures, algorithms, and databases. This repository aims to help you find Java solutions for these problems to better understand the concepts.
 
  ## Structure
 The repository is organized as follows:
