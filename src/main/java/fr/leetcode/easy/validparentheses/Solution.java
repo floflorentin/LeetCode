@@ -1,13 +1,21 @@
-package fr.leetcode.validparentheses;
-
-import java.util.stream.Collectors;
+package fr.leetcode.easy.validparentheses;
 
 public class Solution {
-
-    // Loop through the string and increment each open
-
     public boolean isValid(String s) {
-        return false;
+        int size = s.length();
+        Character[] stacks = new Character[size];
+        int j = 0;
+        for(int i = 0; i < size; i++) {
+            var c = s.charAt(i);
+            if(c == ')' || c == '}' || c == ']') {
+                if(j == 0 || stacks[--j] + ((c + 91) / 90) != c) {
+                    return false;
+                }
+            } else {
+                stacks[j++] = c;
+            }
+        }
+        return j == 0;
     }
 
     public boolean isSpecialCharacter(Character c) {
@@ -17,6 +25,7 @@ public class Solution {
         };
     }
 
+    /*
     public String removingUselessCharacters(String s) {
         return  s.chars().mapToObj(x -> (char) x)
                 .filter(this::isSpecialCharacter)
@@ -36,7 +45,5 @@ public class Solution {
            }
         }
         return true;
-    }
-
-
+    }*/
 }

@@ -1,4 +1,4 @@
-package fr.leetcode.lengthoflastword;
+package fr.leetcode.easy.lengthoflastword;
 
 import org.junit.jupiter.api.Test;
 
@@ -33,9 +33,9 @@ class SolutionTest {
         var test2 = "   fly me   to   the moon  ";
         var test3 = "luffy is still joyboy";
 
-        assertEquals("World", s.lengthOfLastWord(test1));
-        assertEquals("moon", s.lengthOfLastWord(test2));
-        assertEquals("joyboy", s.lengthOfLastWord(test3));
+        assertEquals("World", s.retrieveLastWord(test1));
+        assertEquals("moon", s.retrieveLastWord(test2));
+        assertEquals("joyboy", s.retrieveLastWord(test3));
     }
 
 

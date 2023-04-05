@@ -1,5 +1,6 @@
-package fr.leetcode.validparentheses;
+package fr.leetcode.easy.validparentheses;
 
+import fr.leetcode.easy.validparentheses.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,9 +9,33 @@ class SolutionTest {
     @Test
     public void testSubStringParenthesesSimple() {
         Solution s = new Solution();
-        assertEquals(false, s.isValid("()"));
+        assertEquals(true, s.isValid("()"));
     }
 
+    @Test
+    public void testSubStringParentheses1() {
+        Solution s = new Solution();
+        var input = "()";
+        var output = true;
+        assertEquals(output, s.isValid(input));
+    }
+
+    @Test
+    public void testSubStringParentheses2() {
+        Solution s = new Solution();
+        var input = "()[]{}";
+        var output = true;
+        assertEquals(output, s.isValid(input));
+    }
+
+    @Test
+    public void testSubStringParentheses3() {
+        Solution s = new Solution();
+        var input = "(]";
+        var output = false;
+        assertEquals(output, s.isValid(input));
+    }
+    /*
     @Test
     public void testIsSpecialCharacter() {
         Solution s = new Solution();
@@ -54,5 +79,5 @@ class SolutionTest {
         assertEquals(false, s.compareStartAndEndOfString("[["));
         assertEquals(false, s.compareStartAndEndOfString("{{{[]}}"));
         assertEquals(false, s.compareStartAndEndOfString("()((()))))"));
-    }
+    }*/
 }
