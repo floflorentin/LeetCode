@@ -3,7 +3,7 @@ package fr.leetcode.easy.longest_palindrome;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/longest-palindrome/
+ * <a href="https://leetcode.com/problems/longest-palindrome/">longest-palindrome</a>
  */
 public class Solution {
     public int longestPalindrome(String s) {
